@@ -23,7 +23,7 @@ futures = "0.3.5"
 # And we need to keep Cargo.lock in track, so CI can choose a correct version.
 #
 # See https://doc.rust-lang.org/cargo/reference/resolver.html#semver-compatibility
-grpcio = { version = "0.*", default-features = false }
+grpcio = { git = "https://github.com/tikv/grpc-rs.git", rev = "2057a21e70e4eaf0bfa21bc240d169047bc6b4ba", default-features = false }
 [build-dependencies]
 protobuf-build = { version = "0.*", default-features = false }
 
